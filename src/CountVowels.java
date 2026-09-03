@@ -17,7 +17,7 @@ public class CountVowels {
 
     public static void main(String[] args){
 
-        String str = "Harshitha";
+        String str = "Banglore";
 
         int vowels = 0;
         int consonants = 0;
