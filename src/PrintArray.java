@@ -27,3 +27,9 @@ public class PrintArray {
         }
     }
 }
+/**
+int[] numbers = {10, 31, 20, 40, 69};
+
+for (int i = 0; i < numbers.length; i++) {
+        System.out.println(numbers[i]);
+}**/
