@@ -13,7 +13,7 @@ public class BankAccountDemo {
         account.withdraw(0);
 
         // Tries to withdraw 2000, but the withdrawal is rejected.
-        account.withdraw(0);
+        account.withdraw(2500);
 
         // Gets and displays the final balance.
         System.out.println("Balance: " + account.getBalance());

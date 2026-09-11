@@ -6,10 +6,18 @@ public class Encapsulation {
 
         Student student = new Student();
 
+        // Data is changed through methods instead of direct field access.
         student.setName("Darshan");
         student.setAge(25);
 
-        System.out.println(student.getName());
-        System.out.println(student.getAge());
+        // This invalid value is ignored by setAge().
+        student.setAge(-5);
+
+        System.out.println("Name: " + student.getName());
+        System.out.println("Age: " + student.getAge());
     }
 }
+
+
+//Encapsulation means::
+//Keeping data private and allowing access through methods.
