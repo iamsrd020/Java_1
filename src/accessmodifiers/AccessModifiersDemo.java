@@ -1,5 +1,12 @@
-package encapsulation;
+package accessmodifiers;
 
+/*
+ * This demo focuses only on access modifiers.
+ * It shows how fields with different access levels are accessed.
+ *
+ * Encapsulation is a separate concept. Encapsulation uses techniques such
+ * as private fields and public methods to protect and control data.
+ */
 public class AccessModifiersDemo {
     // Program execution starts from the main method.
     public static void main(String[] args) {

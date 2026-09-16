@@ -1,5 +1,15 @@
-package encapsulation;
+package accessmodifiers;
 
+/*
+ * ACCESS MODIFIERS:
+ *
+ * Access modifiers control where a class member can be accessed.
+ *
+ * private    - accessible only inside the same class
+ * public     - accessible from anywhere
+ * protected  - accessible in the same package and in child classes
+ * default    - accessible only inside the same package
+ */
 public class Employee {
     // Private: accessible only inside the Employee class.
     private int employeeId;
