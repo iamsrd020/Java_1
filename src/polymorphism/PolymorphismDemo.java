@@ -1,5 +1,16 @@
-package oops;
+package polymorphism;
 
+/*
+ * POLYMORPHISM:
+ *
+ * Polymorphism means "many forms". The same method name can behave
+ * differently depending on the object or the arguments.
+ *
+ * This example shows:
+ * 1. Overriding: Dog and Cat provide different sound() implementations.
+ * 2. Overloading: Calculator has several add() methods with different
+ *    parameter lists.
+ */
 public class PolymorphismDemo {
 
     public static void main(String[] args) {

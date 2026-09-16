@@ -1,4 +1,4 @@
-package oops;
+package polymorphism;
 
 // Parent class for animals.
 public class Animal {

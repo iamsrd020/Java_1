@@ -1,4 +1,4 @@
-package oops;
+package inheritance;
 
 // Bike is another child class of Vehicle.
 public class Bike extends Vehicle {

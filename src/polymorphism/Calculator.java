@@ -1,4 +1,4 @@
-package oops;
+package polymorphism;
 
 // Calculator demonstrates method overloading.
 public class Calculator {

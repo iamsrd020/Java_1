@@ -1,4 +1,4 @@
-package oops;
+package encapsulation;
 
 public class BankAccountDemo {
     // Program execution starts from the main method.

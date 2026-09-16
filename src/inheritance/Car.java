@@ -1,4 +1,4 @@
-package oops;
+package inheritance;
 
 // Child class: inherits the fields and methods of Vehicle.
 public class Car extends Vehicle {

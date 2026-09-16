@@ -1,5 +1,14 @@
-package oops;
+package inheritance;
 
+/*
+ * INHERITANCE:
+ *
+ * Inheritance allows a child class to reuse the fields and methods of a
+ * parent class. It represents an "is-a" relationship.
+ *
+ * Car, Bike, Bus, Truck, and ElectricCar are vehicles, so they inherit the
+ * common start() method from Vehicle. Each child also has its own behavior.
+ */
 public class InheritanceDemo {
 
     // Program execution starts from the main method.

@@ -1,4 +1,4 @@
-package oops;
+package encapsulation;
 
 public class Employee {
     // Private: accessible only inside the Employee class.

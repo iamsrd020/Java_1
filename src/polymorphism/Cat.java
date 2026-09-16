@@ -1,4 +1,4 @@
-package oops;
+package polymorphism;
 
 // Cat overrides the sound() method of Animal.
 public class Cat extends Animal {

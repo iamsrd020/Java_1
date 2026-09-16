@@ -1,4 +1,4 @@
-package oops;
+package inheritance;
 
 // Parent class: contains behavior common to vehicles.
 public class Vehicle {

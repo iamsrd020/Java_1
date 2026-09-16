@@ -1,4 +1,4 @@
-package oops;
+package encapsulation;
 
 public class BankAccount {
     // Keeps the account balance private so it cannot be changed directly.
