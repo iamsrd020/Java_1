@@ -1,0 +1,51 @@
+@baseUrl = http://localhost:8080
+
+### Assignment 2: GET all employees (200 OK)
+GET {{baseUrl}}/api/employees
+Accept: application/json
+
+### Assignment 4: POST creates an employee (201 Created)
+# @name createEmployee
+POST {{baseUrl}}/api/employees
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Darshan",
+  "email": "darshan.api@example.test",
+  "salary": 60000.00,
+  "departmentId": 1
+}
+
+> {%
+  client.global.set("employeeId", response.body.id);
+%}
+
+### Assignment 3: GET one employee (200 OK, or 404 Not Found)
+GET {{baseUrl}}/api/employees/{{employeeId}}
+Accept: application/json
+
+### Assignment 5: PUT replaces all employee details (200 or 204)
+PUT {{baseUrl}}/api/employees/{{employeeId}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Darshan Kumar",
+  "email": "darshan.kumar@example.test",
+  "salary": 65000.00,
+  "departmentId": 1
+}
+
+### Assignment 6: PATCH changes only salary (200 or 204)
+PATCH {{baseUrl}}/api/employees/{{employeeId}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "salary": 68000.00
+}
+
+### Assignment 7: DELETE employee (204 No Content)
+DELETE {{baseUrl}}/api/employees/{{employeeId}}
+Accept: application/json
