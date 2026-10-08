@@ -19,4 +19,5 @@ database-http/
 
 Start with `theory/01_DatabaseAndHttpFundamentals.md`. Then follow the
 instructions in `assignments/README.md` to run the SQL in MySQL and review
-the HTTP endpoint examples.
+the HTTP endpoint examples. The employee SQL work uses its own `employee_db`
+database, separate from the JDBC banking demo's `jdbc_demo`.

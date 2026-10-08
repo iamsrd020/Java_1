@@ -1,4 +1,5 @@
-USE jdbc_demo;
+CREATE DATABASE IF NOT EXISTS employee_db;
+USE employee_db;
 
 -- Assignment 7: create the referenced table before the employees table.
 CREATE TABLE IF NOT EXISTS departments (
@@ -33,7 +34,12 @@ INSERT INTO employees (id, name, email, salary, department_id) VALUES
     (2, 'Harshitha', 'harshitha@example.test', 72000.00, 1),
     (3, 'Rahul', 'rahul@example.test', 55000.00, NULL),
     (4, 'Priya', 'priya@example.test', 68000.00, 3),
-    (5, 'Sai', 'sai@example.test', 50000.00, NULL);
+    (5, 'Sai', 'sai@example.test', 50000.00, NULL) AS new
+ON DUPLICATE KEY UPDATE
+    name = new.name,
+    email = new.email,
+    salary = new.salary,
+    department_id = new.department_id;
 
 -- Assignment 3: update one employee. WHERE limits the change to id 3.
 UPDATE employees
@@ -75,7 +81,12 @@ ORDER BY e.id;
 START TRANSACTION;
 
 INSERT INTO employees (id, name, email, salary, department_id)
-VALUES (6, 'Commit Demo', 'commit.demo@example.test', 40000.00, 2);
+VALUES (6, 'Commit Demo', 'commit.demo@example.test', 40000.00, 2) AS new
+ON DUPLICATE KEY UPDATE
+    name = new.name,
+    email = new.email,
+    salary = new.salary,
+    department_id = new.department_id;
 
 COMMIT;
 
